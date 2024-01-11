@@ -18,6 +18,7 @@ blocks:
     task:
       prologue:
         commands:
+          - sem-version python 3.11
           - checkout
           - cache restore
           - mkdir -p .pip_cache
